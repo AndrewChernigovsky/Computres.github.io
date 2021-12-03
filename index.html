@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html class="page" lang="en,ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <title></title>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__wrapper">
+          <div class="logo">
+            <div class="logo__wrapper">
+              <div class="logo__img"><a class="logo__link" href="index.html">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="image/icons/logo4x.webp">
+                    <source media="(min-width:320px)" srcset="image/icons/logo2x.webp">
+                    <source media="(min-width:768px)" srcset="image/icons/logo4x.png">
+                    <source media="(min-width:320px)" srcset="image/icons/logo2x.png"><img src="image/icons/logo2x.png" alt="logo">
+                  </picture></a></div>
+            </div>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link f-srg" href="#no__scroll">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link f-srg" href="#courses">Курсы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link f-srg" href="#dates">Расписание</a></li>
+              <li class="main-nav__item"><a class="main-nav__link f-srg" href="#speakers">Преподаватели</a></li>
+              <li class="main-nav__item"><a class="main-nav__link f-srg" href="#emails">Рассылка</a></li>
+              <li class="main-nav__item"><a class="main-nav__link f-srg" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="sign">
+            <button class="btn btn-sign" type="button" id="sign">Зайти в кабинет</button>
+          </div>
+          <div class="menu" id="menu">
+            <div class="js-overlay-bg"></div>
+            <div class="menu__wrapper">
+              <div class="logo-m">
+                <div class="logo-m__wrapper">
+                  <div class="logo-m__img"><a class="logo-m__link" href="index.html">
+                      <picture>
+                        <source media="(min-width:768px)" srcset="image/icons/logo4x.webp">
+                        <source media="(min-width:320px)" srcset="image/icons/logo2x.webp">
+                        <source media="(min-width:768px)" srcset="image/icons/logo4x.png">
+                        <source media="(min-width:320px)" srcset="image/icons/logo2x.png"><img src="image/icons/logo2x.png" alt="logo">
+                      </picture></a></div>
+                </div>
+              </div>
+              <div class="menu__sign-wrapper">
+                <div class="menu__nav-wrapper">
+                  <div class="menu__burger-btn"><span class="menu__burger"></span><span class="menu__burger-close"></span></div>
+                  <nav class="menu__nav">
+                    <ul class="menu__list">
+                      <li class="menu__item"><span class="menu__text"><a class="menu__link" href="#no__scroll">Главная</a></span></li>
+                      <li class="menu__item"><span class="menu__text"><a class="menu__link" href="#courses">Курсы</a></span></li>
+                      <li class="menu__item"><span class="menu__text"><a class="menu__link" href="#dates">Расписание</a></span></li>
+                      <li class="menu__item"><span class="menu__text"><a class="menu__link" href="#speakers">Преподаватели</a></span></li>
+                      <li class="menu__item"><span class="menu__text"><a class="menu__link" href="#emails">Рассылка</a></span></li>
+                      <li class="menu__item"><span class="menu__text"><a class="menu__link" href="#contacts">Контакты</a></span></li>
+                    </ul>
+                  </nav>
+                </div>
+                <button class="btn btn-sign burger-sign" type="button" id="sign-burger">
+                  <svg fill="white">
+                    <use xlink:href="image/sprite.svg#user"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-header__date conb">
+          <div class="main-header__date-wrapper">
+            <h1 class="f-vbbw">Первый курс<br>по компьютерной сборке</h1>
+            <div class="time-date" id="times">
+              <div class="time-date__wrapper">
+                <p class="days number f-mb">12</p>
+                <p class="f-srg">Дней</p>
+              </div>
+              <div class="time-date__wrapper">
+                <p class="hours number f-mb">12</p>
+                <p class="f-srg">Часов</p>
+              </div>
+              <div class="time-date__wrapper">
+                <p class="minutes number f-mb">12</p>
+                <p class="f-srg">Минут</p>
+              </div>
+              <div class="time-date__wrapper">
+                <p class="seconds number f-mb">12</p>
+                <p class="f-srg">Секунд</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="success">
+      <div class="success__wrapper conb">
+        <button class="btn btn-success" type="button">Заказать курс</button>
+        <div class="success__static">
+          <div class="static">
+            <div class="static-info">
+              <p class="static-text f-srg">Учеников всего:</p>
+              <p class="static-numbers f-sbw">200</p>
+            </div>
+            <div class="static-info">
+              <p class="static-text f-srg">Успешно закончили курс:</p>
+              <p class="static-numbers f-sbw">173</p>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__wrapper">
+            <div class="progress-bar__value"><span class="progress-bar__text f-srg">Заработано учениками:</span><span class="progress-bar__value-count f-sbw">40 000 RUB</span></div>
+            <div class="progress-bar__footer"><span class="progress-bar__value-min f-srg">0</span><span class="progress-bar__value-max f-srg">1 000 000 RUB</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-section bg">
+      <h2 class="secondary-heading"></h2>
+      <div class="present">
+        <div class="present__wrapper conb">
+          <div class="present__product">
+            <picture>
+              <source media="(min-width:320px)" srcset="image/content/computer.webp">
+              <source media="(min-width:320px)" srcset="image/content/computer.png"><img src="image/content/computer.png" alt="computer, product">
+            </picture>
+          </div>
+          <div class="present__description">
+            <h2 class="f-bb">Чем мы занимаемся?</h2>
+            <p class="f-srg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="productsSlider">
+        <div class="productsSlider__wrapper">
+          <div class="productsSlider__slide-wrapper">
+            <div class="productsSlider__slide">
+              <div class="productsSlider__slide-wrapper">
+                <div class="productsSlider__slide-description">
+                  <p class="f-mb">Видеокарта Gigabyte GeForce RTX 2060 6 ГБ (GV-N2060D6-6GD)</p>
+                  <p class="f-sr min">Видеокарта GIGABYTE GeForce RTX 2060 D6 сочетает в себе компактность и высокий уровень производительности. Видеоадаптер, длина которого равна лишь 225.65 мм, может быть смонтирован в компактный корпус.</p>
+                  <p class="f-sr">Видеокарта GIGABYTE GeForce RTX 2060 D6 сочетает в себе компактность и высокий уровень производительности. Видеоадаптер, длина которого равна лишь 225.65 мм, может быть смонтирован в компактный корпус. Главное предназначение видеокарты – достижение высокого уровня скорости обработки трехмерной графики в играх. Модель занимает 2 слота расширения. Особых требований с точки зрения энергопотребления также нет: видеокарта характеризуется максимальной потребляемой мощностью, составляющей 160 Вт. Вам будет нужен блок питания, номинальная выходная мощность которого не менее чем 500 Вт.</p>
+                  <button type="button">Подробнее</button>
+                </div>
+                <div class="productsSlider__img-wrapper"><img src="image/content/videocard1.png" alt="">
+                  <div class="productsSlider__cost"><span class="seller">20 000P</span><span class="sellerNew">12 000P</span><span class="different">20%</span>
+                    <button type="button">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="productsSlider__slide">
+              <div class="productsSlider__slide-wrapper">
+                <div class="productsSlider__slide-description">
+                  <p class="f-mb">Видеокарта Inno3D GeForce RTX 3060 Ti 8 ГБ (N306T3-08D6X-1190VA32D)</p>
+                  <p class="f-sr min">Видеокарта Inno3D GeForce RTX 3060 Tiсочетает в себе компактность и высокий уровень производительности. Видеоадаптер, длина которого равна лишь 225.65 мм, может быть смонтирован в компактный корпус.</p>
+                  <p class="f-sr">Видеокарта Inno3D GeForce RTX 3060 сочетает в себе компактность и высокий уровень производительности. Видеоадаптер, длина которого равна лишь 225.65 мм, может быть смонтирован в компактный корпус. Главное предназначение видеокарты – достижение высокого уровня скорости обработки трехмерной графики в играх. Модель занимает 2 слота расширения. Особых требований с точки зрения энергопотребления также нет: видеокарта характеризуется максимальной потребляемой мощностью, составляющей 160 Вт.</p>
+                  <button type="button">Подробнее</button>
+                </div>
+                <div class="productsSlider__img-wrapper"><img src="image/content/videocard2.png" alt="">
+                  <div class="productsSlider__cost"><span class="seller">20 443P</span><span class="sellerNew">12 999P</span><span class="different">15%</span>
+                    <button type="button">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="productsSlider__slide">
+              <div class="productsSlider__slide-wrapper">
+                <div class="productsSlider__slide-description">
+                  <p class="f-mb">Видеокарта Inno3D 8 ГБ (C306T3-08D6X-1671VA39H)</p>
+                  <p class="f-sr min">Inno3D RTX 3060 Ti IChill X3 8 Гбайт Чрезвычайно быстрая и эффективная видеокарта Inno3D RTX 3060 Ti IChill X3 8 ГБ станет идеальным дополнением игровой установки.</p>
+                  <p class="f-sr">Inno3D RTX 3060 Ti IChill X3 8 Гбайт Чрезвычайно быстрая и эффективная видеокарта Inno3D RTX 3060 Ti IChill X3 8 ГБ станет идеальным дополнением игровой установки. Эта нереференсная модель предлагает увеличенный диапазон тактовой частоты ядра до 1725 МГц, имеет продвинутую систему охлаждения и феноменальный дизайн с красной подсветкой. Если ваша видеокарта - это больше, чем просто еще один компонент, который нужно спрятать в закрытом корпусе, то Inno3D RTX 3060 Ti IChill X3 8 ГБ вам обязательно понравится.</p>
+                  <button type="button">Подробнее</button>
+                </div>
+                <div class="productsSlider__img-wrapper"><img src="image/content/videocard3.png" alt="">
+                  <div class="productsSlider__cost"><span class="seller">30 322P</span><span class="sellerNew">15 999P</span><span class="different">16%</span>
+                    <button type="button">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="productsSlider__button-prev"></div>
+            <div class="productsSlider__button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="statistic conb">
+        <div class="statistic__wrapper">
+          <div class="statistic__product">
+            <picture>
+              <source media="(min-width:768px)" srcset="image/icons/start4x.webp">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.webp">
+              <source media="(min-width:768px)" srcset="image/icons/start4x.png">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.png"><img src="image/icons/start2x.png" alt="start">
+            </picture>
+            <h2 class="f-bb">Быстрый старт</h2>
+          </div>
+          <p class="f-srg">Больше 90% учеников прошли полный курс<br>и смогли собрать свой первый компьютер</p>
+          <div class="statistic__date">
+            <div class="statistic__result">
+              <p class="f-mb">100%</p>
+              <div class="statistic__progress-wrapper one">
+                <div class="statistic__progress-bar one"></div>
+                <div class="progress-bar">
+                  <div class="progress-bar__wrapper">
+                    <div class="progress-bar__value"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="f-vsrg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="statistic__result">
+              <p class="f-mb">75%</p>
+              <div class="statistic__progress-wrapper two">
+                <div class="statistic__progress-bar two"></div>
+                <div class="progress-bar">
+                  <div class="progress-bar__wrapper">
+                    <div class="progress-bar__value"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="f-vsrg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="statistic__result">
+              <p class="f-mb">30%</p>
+              <div class="statistic__progress-wrapper three">
+                <div class="statistic__progress-bar three"></div>
+                <div class="progress-bar">
+                  <div class="progress-bar__wrapper">
+                    <div class="progress-bar__value"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="f-vsrg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="statistic__result">
+              <p class="f-mb">Итог</p>
+              <div class="statistic__progress-wrapper four">
+                <div class="statistic__progress-bar four"></div>
+                <div class="progress-bar">
+                  <div class="progress-bar__wrapper">
+                    <div class="progress-bar__value"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="f-vsrg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profession conb" id="courses">
+        <div class="profession__wrapper">
+          <div class="profession__quality">
+            <h2 class="f-bb">Получите профессию прямо сейчас</h2>
+          </div>
+          <div class="profession__things">
+            <div class="profession__thing">
+              <svg fill="#C89AFC">
+                <use xlink:href="image/sprite.svg#comp"></use>
+              </svg>
+              <p class="f-mbm">Только практические навыки в работе</p>
+              <p class="f-vsrg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="profession__thing">
+              <svg fill="#C89AFC">
+                <use xlink:href="image/sprite.svg#usb"></use>
+              </svg>
+              <p class="f-mbm">Только практические навыки в работе</p>
+              <p class="f-vsrg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+            <div class="profession__thing">
+              <svg fill="#C89AFC" stroke="#C89AFC">
+                <use xlink:href="image/sprite.svg#sertificate"></use>
+              </svg>
+              <p class="f-mbm">Только практические навыки в работе</p>
+              <p class="f-vsrg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parthners conb">
+        <div class="parthners__wrapper">
+          <div class="parthners__head">
+            <picture>
+              <source media="(min-width:768px)" srcset="image/icons/start4x.webp">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.webp">
+              <source media="(min-width:768px)" srcset="image/icons/start4x.png">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.png"><img src="image/icons/start2x.png" alt="start">
+            </picture>
+            <h2 class="f-bb">Партнеры - топовые бренды</h2>
+          </div>
+          <div class="parthners__logos">
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-sandisk.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-sandisk.png"><img src="image/icons/logo-sandisk.png" alt="logo-sandisk">
+              </picture>
+            </div>
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-liteon.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-liteon.png"><img src="image/icons/logo-liteon.png" alt="logo-liteon">
+              </picture>
+            </div>
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-ati.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-ati.png"><img src="image/icons/logo-ati.png" alt="logo-ati">
+              </picture>
+            </div>
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-krok.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-krok.png"><img src="image/icons/logo-krok.png" alt="logo-krok">
+              </picture>
+            </div>
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-oracle.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-oracle.png"><img src="image/icons/logo-oracle.png" alt="logo-oracle">
+              </picture>
+            </div>
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-gigabyte.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-gigabyte.png"><img src="image/icons/logo-gigabyte.png" alt="logo-gigabyte">
+              </picture>
+            </div>
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-powercolor.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-powercolor.png"><img src="image/icons/logo-powercolor.png" alt="logo-powercolor">
+              </picture>
+            </div>
+            <div class="parthners__logo">
+              <picture>
+                <source media="(min-width:320px)" srcset="image/icons/logo-radeon.webp">
+                <source media="(min-width:320px)" srcset="image/icons/logo-radeon.png"><img src="image/icons/logo-radeon.png" alt="logo-radeon">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="study conb" id="dates">
+        <div class="study__wrapper">
+          <div class="study__head">
+            <picture>
+              <source media="(min-width:768px)" srcset="image/icons/start4x.webp">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.webp">
+              <source media="(min-width:768px)" srcset="image/icons/start4x.png">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.png"><img src="image/icons/start2x.png" alt="start">
+            </picture>
+            <h2 class="f-bb">Программа обучения</h2>
+            <p class="f-srg">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+          </div>
+          <div class="study__body">
+            <div class="study__week-block">
+              <div class="study__week">
+                <p class="f-vsrg">Неделя №1</p>
+                <p class="f-sr">Красивая часть курса, которая помогает в успехе</p>
+              </div>
+              <div class="study__week">
+                <p class="f-vsrg">Неделя №3</p>
+                <p class="f-sr">Красивая часть курса, которая помогает в успехе</p>
+              </div>
+              <div class="study__week">
+                <p class="f-vsrg">Неделя №5</p>
+                <p class="f-sr">Красивая часть курса, которая помогает в успехе</p>
+              </div>
+              <div class="study__week">
+                <p class="f-vsrg">Неделя №7</p>
+                <p class="f-sr">Красивая часть курса, которая помогает в успехе</p>
+              </div>
+            </div>
+            <div class="study__week-progress"></div>
+            <div class="study__week-block">
+              <div class="study__week">
+                <p class="f-vsrg">Неделя №2</p>
+                <p class="f-sr">Красивая часть курса, которая помогает в успехе</p>
+              </div>
+              <div class="study__week">
+                <p class="f-vsrg">Неделя №4</p>
+                <p class="f-sr">Красивая часть курса, которая помогает в успехе</p>
+              </div>
+              <div class="study__week">
+                <p class="f-vsrg">Неделя №6</p>
+                <p class="f-sr">Красивая часть курса, которая помогает в успехе</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="speakers conb" id="speakers">
+        <div class="speakers__wrapper">
+          <div class="speakers__head">
+            <picture>
+              <source media="(min-width:768px)" srcset="image/icons/start4x.webp">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.webp">
+              <source media="(min-width:768px)" srcset="image/icons/start4x.png">
+              <source media="(min-width:320px)" srcset="image/icons/start2x.png"><img src="image/icons/start2x.png" alt="start">
+            </picture>
+            <h2 class="f-bb">Ваши преподаватели</h2>
+          </div>
+          <div class="speakers__body">
+            <div class="speaker">
+              <div class="speaker__wrapper">
+                <picture>
+                  <source media="(min-width:320px)" srcset="image/content/speaker-1.webp">
+                  <source media="(min-width:320px)" srcset="image/content/speaker-1.png"><img src="image/content/speaker-1.png" alt="Преподаватель Дмитрий Иванов, специалист по видеокартам">
+                </picture>
+                <h2 class="f-mbm">Дмитрий Иванов</h2>
+                <p class="f-srs">Специалист по видеокартам</p>
+                <button class="btn-speaker f-srs btn" type="button">Биография</button>
+              </div>
+            </div>
+            <div class="speaker">
+              <div class="speaker__wrapper">
+                <picture>
+                  <source media="(min-width:320px)" srcset="image/content/speaker-2.webp">
+                  <source media="(min-width:320px)" srcset="image/content/speaker-2.png"><img src="image/content/speaker-2.png" alt="Преподаватель Дмитрий Иванов, специалист по видеокартам">
+                </picture>
+                <h2 class="f-mbm">Дмитрий Иванов</h2>
+                <p class="f-srs">Специалист по видеокартам</p>
+                <button class="btn-speaker f-srs btn" type="button">Биография</button>
+              </div>
+            </div>
+            <div class="speaker">
+              <div class="speaker__wrapper">
+                <picture>
+                  <source media="(min-width:320px)" srcset="image/content/speaker-3.webp">
+                  <source media="(min-width:320px)" srcset="image/content/speaker-3.png"><img src="image/content/speaker-3.png" alt="Преподаватель Дмитрий Иванов, специалист по видеокартам">
+                </picture>
+                <h2 class="f-mbm">Дмитрий Иванов</h2>
+                <p class="f-srs">Специалист по видеокартам</p>
+                <button class="btn-speaker f-srs btn" type="button">Биография</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer conb" id="emails">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__heading">
+          <h2 class="f-bb">Статьи каждую неделю</h2>
+          <p class="f-srg">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+        </div>
+        <div class="main-footer__body">
+          <form class="form-footer" action="" method="get">
+            <div class="form-footer__email-wrapper">
+              <input class="form-footer__email" type="email" placeholder="E-mail" maxlength="20" name="email" required>
+              <button class="btn-form btn" type="sumbit"><span class="btn-form__tb">Подписаться</span><span class="btn-form__sm">+</span></button>
+            </div>
+          </form>
+        </div>
+        <div class="social" id="contacts">
+          <div class="social__wrapper"><a class="social__link btn" href="#">
+              <svg fill="white">
+                <use xlink:href="image/sprite.svg#vk"></use>
+              </svg></a><a class="social__link btn" href="#">
+              <svg fill="white">
+                <use xlink:href="image/sprite.svg#facebook"></use>
+              </svg></a><a class="social__link btn" href="#">
+              <svg fill="white">
+                <use xlink:href="image/sprite.svg#instagram"></use>
+              </svg></a><a class="social__link btn" href="#">
+              <svg fill="white">
+                <use xlink:href="image/sprite.svg#youtube"></use>
+              </svg></a></div>
+        </div>
+        <p class="f-srg">Все права защищены. All rights reserved. (c) 2022</p>
+      </div>
+    </footer>
+    <div class="profiles" id="sign-entrance">
+      <div class="js-overlay-bg"></div>
+      <div class="profile">
+        <div class="profile__wrapper">
+          <div class="profile__buttons">
+            <button class="btn-secondary" type="button" id="signIn">Войти</button>
+            <button class="btn-secondary" type="button" id="signUp"> Зарегистрироваться</button>
+          </div>
+          <div class="sign-up">
+            <div class="sign-up__wrapper">
+              <div class="sign-up__heading">Войти через:</div>
+              <div class="sign-up__body">
+                <div class="social">
+                  <div class="social__wrapper">
+                    <button class="btn btn-secondary social__link" type="button">
+                      <svg fill="white">
+                        <use xlink:href="image/sprite.svg#vk"></use>
+                      </svg>
+                    </button>
+                    <button class="btn btn-secondary btn-social social__link" type="button">
+                      <svg fill="white">
+                        <use xlink:href="image/sprite.svg#facebook"></use>
+                      </svg>
+                    </button>
+                    <button class="btn btn-secondary btn-social social__link" type="button">
+                      <svg fill="white">
+                        <use xlink:href="image/sprite.svg#instagram"></use>
+                      </svg>
+                    </button>
+                    <button class="btn btn-secondary btn-social social__link" type="button">
+                      <svg fill="white">
+                        <use xlink:href="image/sprite.svg#youtube"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-closeSign" type="button" id="signExit"></button>
+          <div class="login-form" id="login">
+            <form action="" method="" id="login-form">
+              <fieldset class="login-wrappers">
+                <div class="email-wrapper">
+                  <label for="email">Введите email</label>
+                  <input type="email" placeholder="E-mail" name="email" id="email">
+                </div>
+                <div class="password-wrapper">
+                  <label for="password">Введите пароль</label>
+                  <input type="password" placeholder="Password" name="password" id="password">
+                  <button class="btn-password" type="button" id="viewPassword">
+                    <svg fill="white" id="showPassword">
+                      <use xlink:href="image/sprite.svg#passwordEyeOpen"></use>
+                    </svg>
+                    <svg fill="white" id="closePassword">
+                      <use xlink:href="image/sprite.svg#passwordEyeClosed"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn-secondary" type="sumbit">Войти</button>
+              </fieldset>
+            </form>
+            <div class="sign-helpers">
+              <div class="sign-helpers__password">
+                <button class="btn-secondary btnbg" type="button" id="HelpPassword">Забыли пароль?</button>
+              </div>
+              <div class="sign-helpers__login">
+                <button class="btn-secondary btnbg" type="button" id="HelpLogin">Забыли логин?</button>
+              </div>
+            </div>
+            <button class="btn-back" type="button" id="signBack">
+              <svg fill="white">
+                <use xlink:href="image/sprite.svg#btnBack"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="register-form" id="register">
+            <form action="" method="" id="login-formFull">
+              <fieldset class="register-wrappers">
+                <div class="avatar-wrapper">
+                  <label for="avatar">Загрузите вашу фотографию</label>
+                  <input type="file" id="avatar">
+                  <svg fill="white">
+                    <use xlink:href="image/sprite.svg#avatar"></use>
+                  </svg>
+                </div>
+                <div class="email-wrapper">
+                  <label for="email">Ваш email</label>
+                  <input type="email" placeholder="E-mail" name="email" id="email">
+                </div>
+                <div class="password-wrapper">
+                  <label for="registerPassword">Введите пароль</label>
+                  <input type="password" placeholder="Password" name="registerPassword" id="registerPassword">
+                  <label for="registerPasswordRepeat">Повторите пароль</label>
+                  <input type="password" placeholder="Repeat Password" name="registerPasswordRepeat" id="registerPasswordRepeat">
+                  <button class="btn-password" type="button" id="viewRegisterPassword">
+                    <svg fill="white" id="showRegisterPassword">
+                      <use xlink:href="image/sprite.svg#passwordEyeOpen"></use>
+                    </svg>
+                    <svg fill="white" id="closeRegisterPassword">
+                      <use xlink:href="image/sprite.svg#passwordEyeClosed"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn-secondary" type="sumbit">Зарегистрироваться</button>
+              </fieldset>
+            </form>
+            <button class="btn-back" type="button" id="signBackRegister">
+              <svg fill="white">
+                <use xlink:href="image/sprite.svg#btnBack"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <template id="sing-In">
+      <form action="" method="GET">
+        <fieldset>
+          <legend>Зайти в свой кабинет
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password">
+          </legend>
+        </fieldset>
+      </form>
+    </template>
+    <template id="sing-Up">
+      <form action="" method="GET">
+        <fieldset>
+          <legend>Зарегистрироваться
+            <label for="avatar">Аватар</label>
+            <input type="file" name="avatar" id="avatar">
+            <label for="user-name">Ваше полное имя</label>
+            <input type="text" name="user-name" id="user-name">
+            <label for="user-date">Дата рождения</label>
+            <input type="number" name="user-date" id="user-date">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password">
+            <label for="password">Повторите пароль</label>
+            <input type="password" name="check-password" id="check-password">
+          </legend>
+        </fieldset>
+      </form>
+    </template>
+    <script src="js/libs/jquery-3.6.0.min.js" defer></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/libs/libs.min.js" defer></script>
+    <div class="btnUp-wrapper" id="btnUp"><a class="btnUp" href="#">
+        <svg fill="black">
+          <use xlink:href="image/sprite.svg#arrowUp"></use>
+        </svg></a></div>
+  </body>
+</html>
